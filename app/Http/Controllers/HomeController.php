@@ -28,13 +28,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        if(Auth::guest())
-            return view('login');
-        else{
+//        if(Auth::guest())
+//            return view('login');
+//        else{
             $times = Auth::user()->_time;
             $assigned_projects = Auth::user()->_project()->pluck('name','id');
             return view('dashboard',compact('times','assigned_projects'));
-        }
+//        }
     }
 
     public function report(Request $request)
