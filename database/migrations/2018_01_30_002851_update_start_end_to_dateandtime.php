@@ -13,10 +13,10 @@ class UpdateStartEndToDateandtime extends Migration
      */
     public function up()
     {
-        Schema::table('time', function (Blueprint $table) {
-            $table->dateTime('start')->change();
-            $table->dateTime('end')->change();
-        });
+//        Schema::table('time', function (Blueprint $table) {
+//            $table->dateTime('start')->change();
+//            $table->dateTime('end')->change();
+//        });
     }
 
     /**

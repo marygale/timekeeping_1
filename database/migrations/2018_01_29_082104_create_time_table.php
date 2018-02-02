@@ -16,8 +16,8 @@ class CreateTimeTable extends Migration
         Schema::create('time', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned()->nullable();
-            $table->time('start');
-            $table->time('end');
+            $table->dateTime('start');
+            $table->dateTime('end');
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
