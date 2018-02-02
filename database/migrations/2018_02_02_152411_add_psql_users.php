@@ -19,12 +19,13 @@ class AddPsqlUsers extends Migration
 
         $user_super_admin_role = Role::where('name','super_admin')->first();
 
-        $user_super_admin = User::create([
-            'name' => 'Coco Martin',
-            'email' => 'super_admin@email.com',
-            'password' => bcrypt('php123'),
-            'remember_token' => str_random(10),
-        ]);
+        $user_super_admin = new User;
+        $user_super_admin->name = 'Coco Martin';
+        $user_super_admin->email = 'super_admin@email.com';
+        $user_super_admin->password = bcrypt('php123');
+        $user_super_admin->remember_token = str_random(10);
+        $user_super_admin->save();
+
         User::find($user_super_admin)->_roles()->attach($user_super_admin_role);
 
 
