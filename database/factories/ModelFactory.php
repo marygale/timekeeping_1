@@ -22,3 +22,21 @@ $factory->define(App\Model\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+$factory->state(\App\Model\User::class,'easy_user',function (Faker\Generator $faker){
+    return [
+        'email' => 'user@email.com'
+    ];
+});
+
+$factory->state(\App\Model\User::class,'easy_admin',function (Faker\Generator $faker){
+    return [
+        'email' => 'admin@email.com'
+    ];
+});
+
+$factory->state(\App\Model\User::class,'easy_super_admin',function (Faker\Generator $faker){
+    return [
+        'email' => 'super_admin@email.com'
+    ];
+});
