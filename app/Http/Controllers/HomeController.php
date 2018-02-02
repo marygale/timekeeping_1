@@ -31,9 +31,11 @@ class HomeController extends Controller
 //        if(Auth::guest())
 //            return view('login');
 //        else{
-            $times = Auth::user()->_time;
-            $assigned_projects = Auth::user()->_project()->pluck('name','id');
-            return view('dashboard',compact('times','assigned_projects'));
+//            $times = Auth::user()->_time;
+//            $assigned_projects = Auth::user()->_project()->pluck('name','id');
+//            return view('dashboard',compact('times','assigned_projects'));
+
+        return 'hello';
 //        }
     }
 
