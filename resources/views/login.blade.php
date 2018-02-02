@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -29,7 +30,6 @@
         <div class="login-box card">
             <div class="card-body">
                 {{ Form::open(['url' => action('Auth\LoginController@login'),'class'=> 'form-horizontal form-material', 'id' => 'loginform']) }}
-                    {{ csrf_field() }}
                     <h3 class="box-title m-b-20">Sign In</h3>
                     <div class="form-group ">
                         <div class="col-xs-12">
@@ -94,5 +94,12 @@
 <script src="{{asset('assets/plugins/sparkline/jquery.sparkline.min.js')}}"></script>
 <script src="{{asset('js/custom.min.js')}}"></script>
 <script src="{{asset('assets/plugins/styleswitcher/jQuery.style.switcher.js')}}"></script>
+<script>
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
+</script>
 </body>
 </html>
