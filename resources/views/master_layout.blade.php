@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('assets/admin_images/favicon.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{secure_asset('assets/admin_images/favicon.png')}}">
     <title>Admin Press Admin Template - The Ultimate Bootstrap 4 Admin Templatsdfge</title>
-    <link href="{{asset('assets/plugins/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/plugins/morrisjs/morris.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/css/colors/blue.css')}}" id="theme" rel="stylesheet">
+    <link href="{{secure_asset('assets/plugins/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('assets/plugins/morrisjs/morris.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('assets/css/style.css')}}" rel="stylesheet">
+    <link href="{{secure_asset('assets/css/colors/blue.css')}}" id="theme" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -34,16 +34,16 @@
                     <!-- Logo icon --><b>
                         <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
                         <!-- Dark Logo icon -->
-                        <img src="{{asset('assets/admin_images/logo-icon.png')}}" alt="homepage" class="dark-logo" />
+                        <img src="{{secure_asset('assets/admin_images/logo-icon.png')}}" alt="homepage" class="dark-logo" />
 
                         <!-- Light Logo icon -->
-                        <img src="{{asset('assets/admin_images/logo-light-icon.png')}}" alt="homepage" class="light-logo" />
+                        <img src="{{secure_asset('assets/admin_images/logo-light-icon.png')}}" alt="homepage" class="light-logo" />
                     </b>
                     <!--End Logo icon -->
                     <!-- Logo text --><span>
                          <!-- dark Logo text -->
-                         <img src="{{asset('assets/admin_images/logo-text.png')}}" alt="homepage" class="dark-logo" />
-                         <img src="{{asset('assets/admin_images/logo-light-text.png')}}" class="light-logo" alt="homepage" /></span> </a>
+                         <img src="{{secure_asset('assets/admin_images/logo-text.png')}}" alt="homepage" class="dark-logo" />
+                         <img src="{{secure_asset('assets/admin_images/logo-light-text.png')}}" class="light-logo" alt="homepage" /></span> </a>
             </div>
 
 
@@ -127,20 +127,20 @@
 
 
 </div>
-<script src="{{asset('assets/plugins/jquery/jquery.min.js')}}"></script>
-<script src="{{asset('assets/plugins/bootstrap/js/popper.min.js')}}"></script>
-<script src="{{asset('assets/plugins/bootstrap/js/bootstrap.min.js')}}"></script>
-<script src="{{asset('js/jquery.slimscroll.js')}}"></script>
-<script src="{{asset('js/waves.js')}}"></script>
-<script src="{{asset('js/sidebarmenu.js')}}"></script>
-<script src="{{asset('assets/plugins/sticky-kit-master/dist/sticky-kit.min.js')}}"></script>
-<script src="{{asset('js/custom.min.js')}}"></script>
+<script src="{{secure_asset('assets/plugins/jquery/jquery.min.js')}}"></script>
+<script src="{{secure_asset('assets/plugins/bootstrap/js/popper.min.js')}}"></script>
+<script src="{{secure_asset('assets/plugins/bootstrap/js/bootstrap.min.js')}}"></script>
+<script src="{{secure_asset('js/jquery.slimscroll.js')}}"></script>
+<script src="{{secure_asset('js/waves.js')}}"></script>
+<script src="{{secure_asset('js/sidebarmenu.js')}}"></script>
+<script src="{{secure_asset('assets/plugins/sticky-kit-master/dist/sticky-kit.min.js')}}"></script>
+<script src="{{secure_asset('js/custom.min.js')}}"></script>
 @yield('scripts')
-<script src="{{asset('assets/plugins/sparkline/jquery.sparkline.min.js')}}"></script>
-<script src="{{asset('assets/plugins/raphael/raphael-min.js')}}"></script>
-<script src="{{asset('assets/plugins/morrisjs/morris.min.js')}}"></script>
-<script src="{{asset('js/dashboard1.js')}}"></script>
-<script src="{{asset('assets/plugins/styleswitcher/jQuery.style.switcher.js')}}"></script>
+<script src="{{secure_asset('assets/plugins/sparkline/jquery.sparkline.min.js')}}"></script>
+<script src="{{secure_asset('assets/plugins/raphael/raphael-min.js')}}"></script>
+<script src="{{secure_asset('assets/plugins/morrisjs/morris.min.js')}}"></script>
+<script src="{{secure_asset('js/dashboard1.js')}}"></script>
+<script src="{{secure_asset('assets/plugins/styleswitcher/jQuery.style.switcher.js')}}"></script>
 <script>
     $.ajaxSetup({
         headers: {
