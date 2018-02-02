@@ -15,11 +15,11 @@ class SeedMoreUser extends Migration
      */
     public function up()
     {
-        $user_role = Role::where('name','user')->first();
-        $users = factory(User::class,3)->create();
-        $users->each(function ($user) use ($user_role) {
-            $user->_roles()->attach($user_role);
-        });
+//        $user_role = Role::where('name','user')->first();
+//        $users = factory(User::class,3)->create();
+//        $users->each(function ($user) use ($user_role) {
+//            $user->_roles()->attach($user_role);
+//        });
 
     }
 

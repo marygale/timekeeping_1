@@ -15,13 +15,13 @@ class AddUserRoleAttach extends Migration
      */
     public function up()
     {
-        factory(User::class,3)->create();
-        $user_role = Role::where('name','user')->first();
-        $user_admin = Role::where('name','admin')->first();
-        $user_super_admin = Role::where('name','super_admin')->first();
-        User::find(1)->_roles()->attach($user_super_admin);
-        User::find(2)->_roles()->attach($user_admin);
-        User::find(3)->_roles()->attach($user_role);
+//        factory(User::class,3)->create();
+//        $user_role = Role::where('name','user')->first();
+//        $user_admin = Role::where('name','admin')->first();
+//        $user_super_admin = Role::where('name','super_admin')->first();
+//        User::find(1)->_roles()->attach($user_super_admin);
+//        User::find(2)->_roles()->attach($user_admin);
+//        User::find(3)->_roles()->attach($user_role);
 
     }
 
