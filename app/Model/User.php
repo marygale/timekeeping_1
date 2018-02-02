@@ -40,7 +40,7 @@ class User extends Authenticatable
         "super_admin" => "badge-info"
     ];
 
-    protected $appends = ['roles'];
+//    protected $appends = ['roles'];
 
     public function _roles()
     {
